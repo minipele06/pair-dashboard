@@ -19,6 +19,8 @@ Use [GitHub](https://github.com/minipele06/pair-dashboard) to clone the project 
 
 You will be prompted to choose a local path to save the repository. Choose a familiar download location like the Desktop. An example would be to save to a local path such as /Desktop/pairs-dashboard. 
 
+![Image of Github Prompt](screenshots/github.png)
+
 After cloning the repo, navigate there from the command-line:
 
 >cd ~/Desktop/pairs-dashboard
