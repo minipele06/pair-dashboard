@@ -9,7 +9,7 @@ import math
 
 load_dotenv()
 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+API_KEY = "IY2I9IHI08ABKC3Z"
 
 def pricefind(symbol):
     url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize=full&apikey={API_KEY}"
@@ -73,5 +73,9 @@ def sharpe(df1,df2,lt,st,mhp):
     stdev = df2['TradeRet'].std(skipna=True)
     sharpe = ret/stdev
     return sharpe
+
+#Regex to validate ticker input
+def tickercheck(inputString):
+    return bool(re.search(r'^[A-Za-z]{1,5}$', inputString))
 
 
